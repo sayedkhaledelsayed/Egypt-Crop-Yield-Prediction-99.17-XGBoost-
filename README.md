@@ -13,6 +13,7 @@
 This project provides a data-driven analysis and prediction of agricultural crop yields in Egypt over a **34-year period (1990-2024)**. By merging geographical knowledge with advanced Machine Learning techniques, I developed a model capable of forecasting yields with high precision.
 
 > **Key Achievement:** Reached a **99.2% R² Score** using the XGBoost Regressor.
+"The model was validated using 10-Fold Cross-Validation with shuffling, achieving a consistent mean R2 score of 99.12%, ensuring its reliability across different data samples."
 
 ## 📊 The Dataset
 The data is sourced from the **Food and Agriculture Organization (FAOSTAT)**. 
@@ -42,6 +43,7 @@ To use the model in your environment:
 ```python
 import joblib
 import pandas as pd
+
 
 # Load model and encoder
 model = joblib.load('final_crop_model.pkl')
